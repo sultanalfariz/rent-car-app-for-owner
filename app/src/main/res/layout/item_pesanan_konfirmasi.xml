@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:background="#eee">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_pesanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/text_no_pesanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="No. Pesanan : 3"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_harga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Rp. 250.000"
+                        android:textSize="14sp"
+                        android:textColor="#000"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#f0f0f0">
+
+                    <ImageView
+                        android:id="@+id/img_car"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_car"/>
+
+                    <TextView
+                        android:id="@+id/nama_kendaraan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/img_car"
+                        android:text="Daihatsu Ayla"
+                        android:textSize="13sp"
+                        android:textColor="#555"/>
+
+                    <ImageView
+                        android:id="@+id/img_user"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/img_car"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_user"/>
+
+                    <TextView
+                        android:id="@+id/nama_penyewa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_car"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/img_user"
+                        android:text="Muhammad Sultan"
+                        android:textSize="13sp"
+                        android:textColor="#555"/>
+
+                    <TextView
+                        android:id="@+id/no_ktp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_car"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/nama_penyewa"
+                        android:text="3510160509980001"
+                        android:textSize="13sp"
+                        android:textColor="#555"/>
+
+                    <ImageView
+                        android:id="@+id/img_date"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/img_user"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_calendar"/>
+
+                    <TextView
+                        android:id="@+id/tanggal_sewa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_user"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/img_date"
+                        android:text="17 Juni 2019"
+                        android:textSize="13sp"
+                        android:textColor="#555"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/btn_confirm"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/bg_btn_login"
+                        android:text="Konfirmasi"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"/>
+
+                    <TextView
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/btn_confirm"
+                        android:background="@drawable/btn_cancel"
+                        android:gravity="center"
+                        android:text="Batalkan"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:padding="2dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

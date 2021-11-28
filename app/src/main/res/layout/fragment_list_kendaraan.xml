@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eee"
+    tools:context=".Fragment.ListKendaraanFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/toolbar_area"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/ThemeColor">
+
+        <ImageView
+            android:id="@+id/title_bar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_dark"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="130dp"/>
+
+        <ImageView
+            android:id="@+id/btn_tambah"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_add"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list_kendaraan"
+        android:layout_below="@id/toolbar_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

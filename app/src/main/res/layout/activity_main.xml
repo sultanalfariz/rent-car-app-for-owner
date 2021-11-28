@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ThemeColor"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/btnKendaraan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/icon_kendaraan"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_car"/>
+
+            <TextView
+                android:id="@+id/text_kendaraan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Kendaraan"
+                android:layout_marginTop="3dp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_below="@+id/icon_kendaraan"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnPesananMasuk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/icon_pesanan"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_list"/>
+
+            <TextView
+                android:id="@+id/text_pesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Masuk"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_below="@+id/icon_pesanan"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnPesananKonfirmasi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/icon_confirm"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_list"/>
+
+            <TextView
+                android:id="@+id/text_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Dikonfirmasi"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_below="@+id/icon_confirm"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnLainnya"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/icon_more"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_more"/>
+
+            <TextView
+                android:id="@+id/text_lainnya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Lainnya"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_below="@+id/icon_more"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

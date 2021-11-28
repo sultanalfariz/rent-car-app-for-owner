@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_area"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/ThemeColor">
+
+        <TextView
+            android:id="@+id/title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:textSize="17sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_detail_kendaraan"
+        android:layout_below="@+id/toolbar_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/gambar_kendaraan"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/gbr2"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/nama_kendaraan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gambar_kendaraan"
+            android:layout_centerInParent="true"
+            android:text="Daihatsu Ayla"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/nama_perusahaan"
+            android:background="@drawable/bg_type_car"
+            android:layout_below="@+id/nama_kendaraan"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jaya abadi rent"
+            android:textAllCaps="true"
+            android:padding="5dp"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/alamat_rent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/nama_perusahaan"
+            android:layout_centerInParent="true"
+            android:text="Jalan Ikan Paus No. 16"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/card_detail_kendaraan"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fff"/>
+
+    <RelativeLayout
+        android:id="@+id/usage_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="7dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/text_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="info penggunaan"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_car"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/text_info"
+            android:src="@drawable/ic_car"/>
+
+        <TextView
+            android:id="@+id/text_info_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_info"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/img_car"
+            android:text="Penggunaan mobil hanya di daerah Kabupaten Banyuwangi."
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/img_note"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/img_car"
+            android:src="@drawable/ic_list"/>
+
+        <TextView
+            android:id="@+id/text_info_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_car"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/img_note"
+            android:text="Harga sewa tidak termasuk biaya bensin, tol, parkir dan akomodasi sopir."
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/img_time"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/img_note"
+            android:src="@drawable/clock"/>
+
+        <TextView
+            android:id="@+id/text_info_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_note"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/img_time"
+            android:text="Jika durasi rental melebihi batas waktu yang ditentukan maka akan dikenakan denda sebesar 15% per jam"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/img_harga"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/img_time"
+            android:src="@drawable/funds"/>
+
+        <TextView
+            android:id="@+id/text_info_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_time"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/img_note"
+            android:text="Rp. 250.000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#ef2525"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_lanjutkan"
+        android:layout_below="@id/usage_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:background="#52af48"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:text="Lanjutkan" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

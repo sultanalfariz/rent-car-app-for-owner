@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eee"
+    tools:context=".Fragment.PesananMasukFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/toolbar_area"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/ThemeColor">
+
+        <ImageView
+            android:id="@+id/title_bar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_dark"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="130dp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_info"
+        android:layout_below="@id/toolbar_area"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_info"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_info"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textColor="#b1b1b1"
+        android:layout_centerInParent="true"
+        android:text="Maaf, untuk saat ini tidak ada pesanan masuk dari penyewa untuk anda."/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_pesanan_masuk"
+        android:layout_below="@id/toolbar_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
